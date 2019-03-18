@@ -1,0 +1,11 @@
+<dataConfig>
+  <dataSource type="JdbcDataSource" driver="org.apache.cassandra.cql.jdbc.CassandraDriver" url="jdbc:c*://127.0.0.1:9042/cqlintro" autoCommit="true"/>
+<document name="content">
+     <entity name="employee" query="select company_id, employee_id, first_name, last_name from employee" autoCommit="true"> 
+            <field column="company_id" name="company_id" />
+            <field column="employee_id" name="employee_id" />
+            <field column="first_name" name="first_name" />
+            <field column="last_name" name="last_name" />
+    </entity>
+</document>
+</dataConfig>
